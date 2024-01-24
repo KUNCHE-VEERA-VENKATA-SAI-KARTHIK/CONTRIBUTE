@@ -2,13 +2,7 @@ class Solution {
 public:
     int countPairs(vector<int>& nums, int target) {
 
-        sort(nums.begin(),nums.end());
-        
-        for(auto k : nums)
-        {
-            cout<<k<<",";
-        }
-     
+      
         int n=nums.size();
         int count=0;
         int i;
