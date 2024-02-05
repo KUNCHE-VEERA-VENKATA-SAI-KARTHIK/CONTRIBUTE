@@ -18,7 +18,7 @@ public:
             
         }
 
-        return (ans1==ans2) ? true : false;
+        return ans1==ans2;
         
     }
 };
