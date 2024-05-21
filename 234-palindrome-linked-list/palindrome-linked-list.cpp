@@ -52,7 +52,7 @@ public:
         }
 
         // Restore the list (optional)
-        reverse(secondHalfStart);
+        
 
         return palindrome;
     }
