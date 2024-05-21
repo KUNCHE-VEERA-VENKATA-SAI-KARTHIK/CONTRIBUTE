@@ -10,38 +10,27 @@
  */
 class Solution {
 public:
-    
-   void inshead(ListNode* &h,int data)
-    {
-        ListNode * newnode = new ListNode(data);
-
-        newnode->next=h;
-        h= newnode;
-
-        
-        
-
-
-
-    }
     ListNode* reverseList(ListNode* head) {
-       ListNode* temp = head;
-       ListNode * h =NULL;
 
-        while(temp != NULL)
+        ListNode* prev ; 
+        ListNode* front;
+
+         ListNode* temp = head;
+        prev=NULL;
+        front=NULL;
+        while(temp!=NULL)
         {
-            inshead(h,temp->val);
-            temp=temp->next;
+            front = temp->next;
 
+            temp->next=prev;
 
-        }
+            prev=temp;
 
-        return h;
+            temp=front;
+            
+        } 
 
-
-
-
-        
+return prev;
         
     }
 };
