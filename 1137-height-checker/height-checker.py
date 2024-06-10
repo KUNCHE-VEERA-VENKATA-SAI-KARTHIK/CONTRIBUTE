@@ -1,14 +1,8 @@
 class Solution:
     def heightChecker(self, heights: List[int]) -> int:
-        kums=[]
-        kums=heights[:]
-        kums.sort()
-        count=0
-        for i in range(len(kums)):
-            if(heights[i]!=kums[i]):
-                count+=1
-        return count
-    
-
-
-        
+        x=sorted(heights)
+        r=0
+        for i in range(len(x)):
+            if x[i]!=heights[i]:
+                r+=1
+        return r
