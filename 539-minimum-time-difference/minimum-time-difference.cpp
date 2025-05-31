@@ -18,10 +18,7 @@ public:
         }
         
         sort(v.begin(),v.end());
-        for (auto i : v )
-        {
-            cout<< i <<endl;
-        }
+       
 
         int mindiff= INT_MAX;
         int n= v.size();
